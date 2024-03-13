@@ -1,0 +1,11 @@
+:root {
+    --primary-color: 0, 0, 0;
+    --secondary-color: 255, 255, 255;
+    --shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+:root[data-theme="dark"]{
+    --primary-color: 255, 255, 255;
+    --secondary-color: 0, 0, 0;
+    --shadow: 1px 1px 1px rgba(0, 166, 255, 0.6);
+}

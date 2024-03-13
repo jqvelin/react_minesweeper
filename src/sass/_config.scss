@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body, #root {
+    @include center;
+}
+
+$cell-width: 28px;
+$cell-width-min: 20px;
+$cell-background: #A9A9A9;
+$cell-revealed-background: #C5C6D0;
+
+$mine-background: #1B1B1B;
+
+$flag-background: #CD5C5C;
+
+$button-color: rgba(52, 183, 74, 1);
