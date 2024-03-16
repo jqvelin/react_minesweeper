@@ -12,10 +12,6 @@
     justify-content: center;
 }
 
-body, #root {
-    @include center;
-}
-
 $cell-width: 28px;
 $cell-width-min: 20px;
 $cell-background: #A9A9A9;

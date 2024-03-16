@@ -1,7 +1,8 @@
-import React, { FC, useEffect } from 'react';
-import { Field } from '../models/Field';
-import CellComponent from './CellComponent';
-import { GameStates } from '../models/GameStates';
+import React, { FC } from 'react';
+import './FieldComponent.scss'
+import { Field } from '../../models/Field';
+import CellComponent from '../CellComponent/CellComponent';
+import { GameStates } from '../../models/GameStates';
 
 interface FieldComponentProps {
     field: Field

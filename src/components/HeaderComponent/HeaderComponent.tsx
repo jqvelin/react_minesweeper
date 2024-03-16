@@ -1,7 +1,8 @@
-import React, { ChangeEvent, FC } from 'react';
-import { Difficulties } from '../models/Difficulties';
-import DifficultySelectorComponent from './DifficultySelectorComponent';
-import ThemeSwitcherComponent from './ThemeSwitcherComponent';
+import React, { FC } from 'react';
+import './HeaderComponent.scss'
+import { Difficulties } from '../../models/Difficulties';
+import DifficultySelectorComponent from '../DifficultySelectorComponent/DifficultySelectorComponent';
+import ThemeSwitcherComponent from '../ThemeSwitcherComponent/ThemeSwitcherComponent';
 
 interface HeaderComponentProps {
     difficulty: Difficulties

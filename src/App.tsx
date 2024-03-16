@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './sass/App.scss'
 import { Field } from './models/Field';
 import { Difficulties } from './models/Difficulties';
-import FieldComponent from './components/FieldComponent';
+import FieldComponent from './components/FieldComponent/FieldComponent';
 import { GameStates } from './models/GameStates';
-import HeaderComponent from './components/HeaderComponent';
-import FooterComponent from './components/FooterComponent';
-import IntroductionComponent from './components/IntroductionComponent';
-import GameOutcomeComponent from './components/GameOutcomeComponent';
+import HeaderComponent from './components/HeaderComponent/HeaderComponent';
+import FooterComponent from './components/FooterComponent/FooterComponent';
+import IntroductionComponent from './components/IntroductionComponent/IntroductionComponent';
+import GameOutcomeComponent from './components/GameOutcomeComponent/GameOutcomeComponent';
 
 const App = () => {
   const [gameState, setGameState] = useState<GameStates>(GameStates.INTRODUCTION)

@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { GameStates } from '../models/GameStates';
+import './GameOutcomeComponent.scss'
+import { GameStates } from '../../models/GameStates';
 
 interface GameOutcomeComponentProps {
     gameState: GameStates

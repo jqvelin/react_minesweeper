@@ -1,0 +1,93 @@
+@import '/src/sass/config';
+
+.modal {
+    color: rgb(var(--primary-color));
+    background-color: rgb(var(--secondary-color));
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    @include center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: column;
+    transition: transform 1s ease;
+    transition-delay: 2s;
+    h2 {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity 1s ease, transform 1s ease;
+        transition-delay: 1s;
+    }
+    &.slide {
+        .logo {
+            rotate: 360deg;
+        }
+
+        h2 {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        transform: translateY(-40%);
+    }
+}
+
+.logo {
+    width: 120px;
+    rotate: 0;
+    transition: rotate 1s ease-in-out;
+}
+
+.tips {
+    opacity: 0;
+    transition: opacity 1s ease;
+    transition-delay: 3s;
+    &.appear {
+        opacity: 1;
+    }
+}
+
+.tip {
+    width: 50vw;
+    margin-bottom: 2rem;
+    .field {
+        margin-right: 1rem;
+    }
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+}
+
+button {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    background-color: $button-color;
+    border: 1px rgb(var(--primary-color)) solid;
+    cursor: pointer;
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    .tip {
+        width: 80vw;
+    }
+}

@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useEffect, useState } from 'react';
-import { Themes } from '../models/Themes';
+import './ThemeSwitcherComponent.scss'
+import { Themes } from '../../models/Themes';
 
 const ThemeSwitcherComponent = () => {
     const [theme, setTheme] = useState('light')

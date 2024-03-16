@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
-import { Difficulties } from '../models/Difficulties';
+import './DifficultySelectorComponent.scss'
+import { Difficulties } from '../../models/Difficulties';
 
 interface DifficultySelectorComponentProps {
     difficulty: Difficulties

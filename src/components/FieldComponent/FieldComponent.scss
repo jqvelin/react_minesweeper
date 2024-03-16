@@ -1,0 +1,23 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.2em;
+}
+
+.victory {
+    animation: blinking-shadow 1.5s ease infinite;
+}
+
+@keyframes blinking-shadow {
+    0% {
+        box-shadow: 0 0 5px 3px rgba(lightgreen, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 5px 3px rgba(lightgreen, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px 3px rgba(lightgreen, 0.2);
+    }
+}

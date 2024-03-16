@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
-import { Cell } from '../models/Cell';
-import { GameStates } from '../models/GameStates';
+import './CellComponent.scss'
+import { Cell } from '../../models/Cell';
+import { GameStates } from '../../models/GameStates';
 
 interface CellComponentProps {
     cell: Cell
@@ -38,7 +39,7 @@ const CellComponent: FC<CellComponentProps> = ({cell, updateField, setGameState}
     }
 
     return (
-        <div className={['cell', cell.revealed  ? 'revealed' : ''].join(' ')} onPointerDown={e => handleReveal(e)}>
+        <div data-type={cell.revealed ? cell.minesNearby : ''} className={['cell', cell.revealed  ? 'revealed' : ''].join(' ')} onPointerDown={e => handleReveal(e)}>
             {cell.flagged ? <div className="flag"></div> : (cell.revealed && (cell.hasMine ? <div className="mine"></div> : (cell.minesNearby || '')))}
         </div>
     );

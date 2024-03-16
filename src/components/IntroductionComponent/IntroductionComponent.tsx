@@ -1,7 +1,8 @@
 import React, { FC, useEffect, useRef } from 'react';
-import { GameStates } from '../models/GameStates';
-import { Difficulties } from '../models/Difficulties';
-import logo from '../assets/logo.png'
+import './IntroductionComponent.scss'
+import { GameStates } from '../../models/GameStates';
+import { Difficulties } from '../../models/Difficulties';
+import logo from '../../assets/logo.png'
 
 interface IntroductionComponentProps{
     difficulty: Difficulties
@@ -30,11 +31,11 @@ const IntroductionComponent: FC<IntroductionComponentProps> = ({difficulty, setD
                         <div className="field">
                             <div className="row">
                                 <div className="cell revealed"></div>
-                                <div className="cell revealed">1</div>
+                                <div data-type="1" className="cell revealed">1</div>
                                 <div className="cell revealed"></div>
                             </div>
                             <div className="row">
-                                <div className="cell revealed">2</div>
+                                <div data-type="2" className="cell revealed">2</div>
                                 <div className="cell revealed"></div>
                                 <div className="cell revealed"><div className="mine"></div></div>
                             </div>
@@ -50,19 +51,19 @@ const IntroductionComponent: FC<IntroductionComponentProps> = ({difficulty, setD
                         <div className="row tip">
                             <div className="field">
                                 <div className="row">
-                                    <div className="cell revealed">1</div>
+                                    <div data-type="1" className="cell revealed">1</div>
                                     <div className="cell"><div className="flag"></div></div>
-                                    <div className="cell revealed">3</div>
+                                    <div data-type="3" className="cell revealed">3</div>
                                 </div>
                                 <div className="row">
-                                    <div className="cell revealed">1</div>
-                                    <div className="cell revealed">2</div>
+                                    <div data-type="1" className="cell revealed">1</div>
+                                    <div data-type="2" className="cell revealed">2</div>
                                     <div className="cell"><div className="flag"></div></div>
                                 </div>
                                 <div className="row">
                                     <div className="cell revealed"></div>
-                                    <div className="cell revealed">2</div>
-                                    <div className="cell revealed">1</div>
+                                    <div data-type="2" className="cell revealed">2</div>
+                                    <div data-type="1" className="cell revealed">1</div>
                                 </div>
                             </div>
                         <p>Отметьте все заминированные клетки флажками!</p>
