@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/memorygame/static/css/main.f6348d62.css",
-    "main.js": "/memorygame/static/js/main.f13df959.js",
-    "static/js/787.9096bd4e.chunk.js": "/memorygame/static/js/787.9096bd4e.chunk.js",
-    "index.html": "/memorygame/index.html",
-    "main.f6348d62.css.map": "/memorygame/static/css/main.f6348d62.css.map",
-    "main.f13df959.js.map": "/memorygame/static/js/main.f13df959.js.map",
-    "787.9096bd4e.chunk.js.map": "/memorygame/static/js/787.9096bd4e.chunk.js.map"
+    "main.css": "/react_minesweeper/static/css/main.3f0e2ba5.css",
+    "main.js": "/react_minesweeper/static/js/main.3b206d96.js",
+    "static/media/logo.png": "/react_minesweeper/static/media/logo.cacf0c90f488374c9397.png",
+    "index.html": "/react_minesweeper/index.html",
+    "main.3f0e2ba5.css.map": "/react_minesweeper/static/css/main.3f0e2ba5.css.map",
+    "main.3b206d96.js.map": "/react_minesweeper/static/js/main.3b206d96.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6348d62.css",
-    "static/js/main.f13df959.js"
+    "static/css/main.3f0e2ba5.css",
+    "static/js/main.3b206d96.js"
   ]
 }
