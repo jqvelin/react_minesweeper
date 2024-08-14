@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './sass/App.scss'
+import './sass-global/App.scss'
 import { Field } from './models/Field';
 import { Difficulties } from './models/Difficulties';
 import FieldComponent from './components/FieldComponent/FieldComponent';

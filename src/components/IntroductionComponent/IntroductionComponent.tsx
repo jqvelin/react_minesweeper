@@ -2,7 +2,6 @@ import React, { FC, useEffect, useRef } from 'react';
 import './IntroductionComponent.scss'
 import { GameStates } from '../../models/GameStates';
 import { Difficulties } from '../../models/Difficulties';
-import logo from '../../assets/logo.png'
 
 interface IntroductionComponentProps{
     difficulty: Difficulties
@@ -22,7 +21,7 @@ const IntroductionComponent: FC<IntroductionComponentProps> = ({difficulty, setD
             <div className="modal-content">
 
                 <div className="logo-container" ref={animatableLogo}>
-                    <img src={logo} className="logo"/>
+                    <img src={`${process.env.PUBLIC_URL}/logo.png`} className="logo"/>
                     <h2>MINESWEEPER</h2>
                 </div>
 
